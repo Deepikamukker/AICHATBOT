@@ -2,7 +2,6 @@ const axios = require('axios');
 
 const GEMINI_API_KEY = "AIzaSyCpfgIVASrGR-nfAiIwkur2Mez4wty8wME";
 
-// Helper function to identify order ID in user message
 const isOrderIdQuery = (message) => {
   const orderIdMatch = message.match(/\b\d{5,10}\b/); // Match order IDs with 5 to 10 digits
   return orderIdMatch ? orderIdMatch[0] : null;
